@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <main>
+        <form action="" autocomplete="on">
+            <div class="text-area">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear what you're working on. Tell us a little <br> about it, and we will be in touch
+                    soon.</p>
+            </div>
+
+            <div class="name">
+                <div class="name1">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="John" required>
+                </div>
+
+                <div class="name2">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Doe" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="field">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" name="phone-number" id="phone-number" required>
+            </div>
+
+            <div class="field">
+                <label for="start-time">When are you looking to get started</label>
+                <select name="start-time" id="start-time">
+                    <option value="">Select an option</option>
+                    <option value="immediately">Immediately</option>
+                    <option value="mid-month">Middle of the month</option>
+                    <option value="end-month">End of the month</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="service">Which service are you interested in</label>
+                <select name="service" id="service">
+                    <option value="">Select an option</option>
+                    <option value="landing-page">Landing Page</option>
+                    <option value="portfolio-website">Portfolio Website</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="referral">How did you hear about us</label>
+                <select name="referral" id="referral">
+                    <option value="">Select an option</option>
+                    <option value="friend">A friend</option>
+                    <option value="social-media">Social media</option>
+                </select>
+            </div>
+
+            <div class="check-field">
+                <span>Are you enquiring as an individual or business</span>
+                <div class="radio-group">
+                    <label for="customer-individual">
+                        <input type="radio" name="customer" id="customer-individual" value="individual">
+                        Individual
+                    </label>
+                    <label for="customer-business">
+                        <input type="radio" name="customer" id="customer-business" value="business">
+                        Business
+                    </label>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="textarea">How can we help you? (required)</label>
+                <textarea name="textarea" id="textarea" rows="4" required></textarea>
+            </div>
+
+            <div class="checkbox-row">
+                <input type="checkbox" name="privacy-policy" id="privacy-policy" required>
+                <label for="privacy-policy">I have read and agree to the Privacy Policy</label>
+            </div>
+
+            <button type="submit">SEND MY REQUEST</button>
+        </form>
+    </main>
+</body>
+
+</html>
